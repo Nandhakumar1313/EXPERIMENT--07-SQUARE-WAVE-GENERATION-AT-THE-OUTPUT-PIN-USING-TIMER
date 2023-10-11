@@ -96,39 +96,67 @@ Step14. click on debug and simulate using simulation as shown below
   
 
 ## STM 32 CUBE PROGRAM :
-
+```
+NAME:G.R.NANDHAKUMAR
+REG:212222100029
+```
+```C
+HAL_TIM_Base_Start(&htim2);
+HAL_TIM_PWM_Init(&htim2);
+HAL_TIM_PWM_Start(&htim2,TIM_CHANNEL_1);
+```
 
 
 
 
 ## Output screen shots of proteus  :
- 
+![Screenshot 2023-10-11 142654](https://github.com/Nandhakumar1313/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/120230694/ce4ea51a-d416-4c88-b0c9-d07ffee8b130)
+
+
  
  ## CIRCUIT DIAGRAM (EXPORT THE GRAPHICS TO PDF AND ADD THE SCREEN SHOT HERE): 
- 
+ ![Screenshot 2023-10-11 143122](https://github.com/Nandhakumar1313/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/120230694/3a96e709-3d43-414f-8ef8-1f0acf9c9387)
 
 ## DUTY CYCLE AND FREQUENCY CALCULATION 
-FOR PULSE AT 500
-
-TON = 
-TOFF=
-TOTAL TIME = 
+### FOR PULSE AT 500
+![274207345-e5d9cc90-2ce5-4115-bd06-c6edbf11f314](https://github.com/Nandhakumar1313/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/120230694/9bd7a3fb-fa28-4c9d-9f89-679bb9f950a2)
+```
+Total Time period =4.1ms
+TON = 2ms
+TOFF= 2ms
+TOTAL TIME = 4 
 FREQUENCY = 1/(TOTAL TIME)
+= 1/(410^-3)
+= 250Hz
+```
 
-FOR PULSE AT 700
 
-TON = 
-TOFF=
-TOTAL TIME = 
+### FOR PULSE AT 700
+![274207375-63f1ddc1-3da5-4d76-ba92-fb3020fe7877](https://github.com/Nandhakumar1313/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/120230694/6bbcc10a-6910-481b-aab4-2f4699aae674)
+
+```
+Total Time period = 3.11ms
+TON =  2.17ms
+TOFF= 0.93ms
+TOTAL TIME = 3.1 
 FREQUENCY = 1/(TOTAL TIME)
+= 1/(3.110^-3)
+= 322.58Hz
+```
 
 
-FOR PULSE AT 900
+### FOR PULSE AT 900
+![274207391-d4590fcb-0d3b-4970-9c41-05a320834e36](https://github.com/Nandhakumar1313/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/120230694/2b7fc648-1b08-4c77-ac2f-b06e2ad2f792)
 
-TON = 
-TOFF=
-TOTAL TIME = 
+```
+Total Time period = 3.21ms
+TON = 2.88ms
+TOFF= 0.32ms
+TOTAL TIME = 3.2 
 FREQUENCY = 1/(TOTAL TIME)
+= 1/(3.210^-30
+= 312.5Hz
+```
 
 
 ## Result :
